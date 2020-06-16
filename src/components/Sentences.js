@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 
 import { ReactComponent as PawPrintIcon } from "../assets/icon.svg";
-import data from "../mocks/data.json";
+import { getAllSentences, createNewSentence } from "../api/sentencesApi";
+import AddSentence from "./AddSentence";
 
 const Container = styled.ul`
   flex: 1;
@@ -39,20 +40,55 @@ const Icon = styled(PawPrintIcon)`
   top: 2px;
 `;
 
+const Loader = styled.div`
+  text-align: center;
+  font-size: 2rem;
+  color: palevioletred;
+`;
+
 function Sentences() {
+  const [sentences, setSentences] = useState([]);
+  const [isLoading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetchAllSentences();
+  }, []);
+
+  const fetchAllSentences = async () => {
+    const data = await getAllSentences();
+    setSentences(data);
+    setLoading(false);
+  };
+
+  const addNewSentence = async (newData) => {
+    setLoading(true);
+    await createNewSentence(newData);
+
+    const newSentences = [newData, ...sentences];
+    setSentences(newSentences);
+    setLoading(false);
+  };
+
   return (
-    <Container className="container animals" id="animals">
-      {data.map(({ animals, en, pl }) => {
-        return (
-          <Item key={en}>
-            <Icon />
-            <Heading>{animals.join(", ")}</Heading>
-            <En>{en}</En>
-            <P>{pl}</P>
-          </Item>
-        );
-      })}
-    </Container>
+    <>
+      <AddSentence addNewSentence={addNewSentence} />
+      {isLoading ? (
+        <Loader>Loading...</Loader>
+      ) : (
+        <Container className="container animals" id="animals">
+          {sentences.map(({ animals, en, pl }) => {
+            return (
+              <Item key={en}>
+                <Icon />
+                <Heading>{animals.join(", ")}</Heading>
+                <En>{en}</En>
+                <P>{pl}</P>
+              </Item>
+            );
+          })}
+        </Container>
+      )}
+    </>
   );
 }
 

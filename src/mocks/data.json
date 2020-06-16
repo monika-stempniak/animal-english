@@ -7,7 +7,7 @@
   {
     "animals": ["pig"],
     "en": "make a pig of oneself",
-    "pl": "obżrerać się jak świnia"
+    "pl": "obżerać się jak świnia"
   },
   {
     "animals": ["rat"],
@@ -16,7 +16,7 @@
   },
   {
     "animals": ["cat", "dog"],
-    "en": "it’s raining cats anddogs",
+    "en": "it’s raining cats and dogs",
     "pl": "leje jak z cebra"
   },
   {
