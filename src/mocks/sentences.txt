@@ -1,0 +1,72 @@
+<li>
+  <p>be no spring chicken</p>
+  <p>mieć swoje lata</p>
+</li>
+<li>
+  <p>make a pig of oneself</p>
+  <p>obżrerać się jak świnia</p>
+</li>
+<li>
+  <p>smell a rat</p>
+  <p>wyczuć pismo nosem, przeczuwać coś złego</p>
+</li>
+<li>
+  <p>put the cat among the pigeons</p>
+  <p>wsadzić kij w mrowisko</p>
+</li>
+<li>
+  <p>a bird in the hand is worth two in the bush</p>
+  <p>lepszy wróbel w garści niż gołąb na dachu</p>
+</li>
+<li>
+  <p>there are plenty more fish in the sea</p>
+  <p>tego kwiatu jest pół światu</p>
+</li>
+<li>
+  <p>hold your horses</p>
+  <p>chwila, moment, wyluzuj, spokojnie, hola</p>
+</li>
+<li>
+  <p>kill two birds with one stone</p>
+  <p>upiec dwie pieczenie na jednym ogniu</p>
+</li>
+<li>
+  <p>let the cat out of the bag</p>
+  <p>zdradzić komuś tajemnicę, puścić parę z ust, wygadać się</p>
+</li>
+<li>
+  <p>have ants in one's pants</p>
+  <p>nie móc usiedzieć na miejscu</p>
+</li>
+<li>
+  <p>eager beaver</p>
+  <p>bardzo pracowita, skora do pracy, entuzjastyczna osoba</p>
+</li>
+<li>
+  <p>take the bull by the horns</p>
+  <p>złapać byka za rogi, stawić czemuś czoła</p>
+</li>
+<li>
+  <p>hen party</p>
+  <p>wieczór panieński</p>
+</li>
+<li>
+  <p>it’s raining cats and dogs</p>
+  <p>leje jak z cebra</p>
+</li>
+<li>
+  <p>get one's ducks in a row</p>
+  <p>uporządkować swoje sprawy, dobrze się przygotować</p>
+</li>
+<li>
+  <p>buy a pig in a poke</p>
+  <p>kupować kota w worku</p>
+</li>
+<li>
+  <p>be/feel like a fish out of water</p>
+  <p>czuć się całkowicie nie na miejscu</p>
+</li>
+<li>
+  <p>be like a bear with a sore head</p>
+  <p>być w złym nastroju, być złym jak osa</p>
+</li>

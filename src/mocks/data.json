@@ -1,0 +1,47 @@
+[
+  {
+    "animals": ["chicken"],
+    "en": "be no spring chicken",
+    "pl": "mieć swoje lata"
+  },
+  {
+    "animals": ["pig"],
+    "en": "make a pig of oneself",
+    "pl": "obżrerać się jak świnia"
+  },
+  {
+    "animals": ["rat"],
+    "en": "smell a rat",
+    "pl": "wyczuć pismo nosem, przeczuwać coś złego"
+  },
+  {
+    "animals": ["cat", "dog"],
+    "en": "it’s raining cats anddogs",
+    "pl": "leje jak z cebra"
+  },
+  {
+    "animals": ["bird"],
+    "en": "kill two birds with one stone",
+    "pl": "upiec dwie pieczenie na jednym ogniu"
+  },
+  {
+    "animals": ["bird"],
+    "en": "a bird in the hand is worth two in the bush",
+    "pl": "lepszy wróbel w garści niż gołąb na dachu"
+  },
+  {
+    "animals": ["cat, pigeon"],
+    "en": "put the cat among the pigeons",
+    "pl": "wsadzić kij w mrowisko"
+  },
+  {
+    "animals": ["fish"],
+    "en": "there are plenty more fish in the sea",
+    "pl": "tego kwiatu jest pół światu"
+  },
+  {
+    "animals": ["horse"],
+    "en": "hold your horses",
+    "pl": "chwila, moment, wyluzuj, spokojnie, hola"
+  }
+]
