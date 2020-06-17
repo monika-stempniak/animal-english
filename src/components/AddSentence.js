@@ -5,7 +5,14 @@ import { isEmpty } from "lodash";
 const Form = styled.form`
   display: flex;
   justify-content: center;
-  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  margin: 20px 0;
+`;
+
+const InputContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 `;
 
 const Input = styled.input`
@@ -20,6 +27,9 @@ const Input = styled.input`
   &:focus {
     border-bottom: 1px solid palevioletred;
   }
+  @media (max-width: 928px) {
+    margin-bottom: 20px;
+  }
 `;
 
 const Button = styled.button`
@@ -31,6 +41,7 @@ const Button = styled.button`
   border-width: 0;
   box-sizing: border-box;
   cursor: ${(props) => (props.disabled ? "default" : "pointer")};
+  margin: 0 20px;
 `;
 
 function AddSentence({ addNewSentence }) {
@@ -67,27 +78,29 @@ function AddSentence({ addNewSentence }) {
 
   return (
     <Form onSubmit={createNewSentence}>
-      <Input
-        type="text"
-        name="animals"
-        placeholder="animals"
-        value={newSentence.animals}
-        onChange={handleChange}
-      />
-      <Input
-        type="text"
-        name="en"
-        placeholder="sentence in EN"
-        value={newSentence.en}
-        onChange={handleChange}
-      />
-      <Input
-        type="text"
-        name="pl"
-        placeholder="sentence in PL"
-        value={newSentence.pl}
-        onChange={handleChange}
-      />
+      <InputContainer>
+        <Input
+          type="text"
+          name="animals"
+          placeholder="animals"
+          value={newSentence.animals}
+          onChange={handleChange}
+        />
+        <Input
+          type="text"
+          name="en"
+          placeholder="sentence in EN"
+          value={newSentence.en}
+          onChange={handleChange}
+        />
+        <Input
+          type="text"
+          name="pl"
+          placeholder="sentence in PL"
+          value={newSentence.pl}
+          onChange={handleChange}
+        />
+      </InputContainer>
       <Button type="submit" disabled={isSomeEmpty || isLoading}>
         Add&nbsp;new
       </Button>

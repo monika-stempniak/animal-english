@@ -4,6 +4,7 @@ import styled from "styled-components";
 const Title = styled.h1`
   font-size: 3rem;
   text-align: center;
+  line-height: 1.2;
   color: palevioletred;
   margin: 0;
 `;
