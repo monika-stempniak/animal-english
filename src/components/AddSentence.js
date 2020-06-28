@@ -25,7 +25,7 @@ const Input = styled.input`
   box-sizing: border-box;
   outline: none;
   &:focus {
-    border-bottom: 1px solid palevioletred;
+    border-bottom: 1px solid #ffbb00;
   }
   @media (max-width: 928px) {
     margin-bottom: 20px;

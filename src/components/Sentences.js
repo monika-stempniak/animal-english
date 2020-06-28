@@ -53,7 +53,7 @@ const P = styled.p`
 
 const En = styled(P)`
   flex: 1;
-  color: palevioletred;
+  color: #ffbb00;
   padding: 0 20px;
   @media (max-width: 767px) {
     padding: 0;
@@ -66,7 +66,7 @@ const Pl = styled(P)`
 
 const Icon = styled(PawPrintIcon)`
   width: 20px;
-  color: palevioletred;
+  color: #ffbb00;
   margin-right: 20px;
   position: relative;
   top: 2px;
@@ -75,7 +75,7 @@ const Icon = styled(PawPrintIcon)`
 const Loader = styled.div`
   text-align: center;
   font-size: 2rem;
-  color: palevioletred;
+  color: #ffbb00;
 `;
 
 function Sentences() {
