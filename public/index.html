@@ -2,7 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="%PUBLIC_URL%/images/favicon-16x16.png"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#1a1300" />
     <meta
@@ -44,10 +48,23 @@
               console.log(
                 `Service Worker registered! Scope: ${registration.scope}`
               );
+
+              const channel = new BroadcastChannel("service-worker-channel");
+              channel.onmessage = (message) => {
+                if (message.data.promptToReload) {
+                  if (confirm("Updates available. Would you like to reload?")) {
+                    channel.postMessage({ skipWaiting: true });
+                  }
+                }
+              };
             })
             .catch((err) => {
               console.log(`Service Worker registration failed: ${err}`);
             });
+
+          navigator.serviceWorker.addEventListener("controllerchange", () => {
+            window.location.reload();
+          });
         });
       }
     </script>
